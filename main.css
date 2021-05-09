@@ -1,461 +1,661 @@
-                    html,
-                    body {
-                        margin: 0;
-                        height: 100%;
-                        width: 100%;
-                    }
-                    
-                    body {
-                        font-family: 'Open Sans', Helvetica, sans-serif;
-                        color: #fff;
-                        font-size: 16px;
-                        line-height: 1.42;
-                        background: #001821;
-                        -webkit-font-smoothing: antialiased;
-                        -moz-osx-font-smoothing: grayscale;
-                    }
-                    
-                    a {
-                        color: inherit;
-                    }
-                    
-                    h1,
-                    h2,
-                    h3,
-                    h4 {
-                        margin: 0;
-                        font-weight: none;
-                    }
-                    
-                    * {
-                        box-sizing: border-box;
-                    }
-                    
-                    ul {
-                        padding: 0;
-                        margin: 0;
-                    }
-                    
-                    ul li {
-                        list-style: none;
-                    }
-                    
-                    .main-page {
-                        background: url(./img/background/1.png) center top no-repeat, url(./img/background/2.png) center bottom 190px no-repeat, url(./img/background/3.png) center center no-repeat;
-                    }
-                    
-                    .container {
-                        position: relative;
-                        margin: 0 auto;
-                        width: 1141px;
-                    }
-                    
-                    .header {
-                        height: 75px;
-                    }
-                    
-                    .main-page__header {
-                        margin-bottom: 117px;
-                    }
-                    
-                    .logo {
-                        display: block;
-                        position: absolute;
-                        top: 27px;
-                        left: 0px
-                    }
-                    
-                    .menu {
-                        position: absolute;
-                        top: 37px;
-                        left: 163px;
-                    }
-                    
-                    .menu__item {
-                        display: inline-block;
-                        vertical-align: middle;
-                        margin-right: 51px;
-                    }
-                    
-                    .menu__item:last-child {
-                        margin-right: 0px;
-                    }
-                    
-                    .menu__item--active .menu__link {
-                        color: #F5170E;
-                    }
-                    
-                    .menu__link {
-                        font-size: 14px;
-                        text-decoration: none;
-                    }
-                    
-                    .menu__link:hover {
-                        color: red;
-                    }
-                    
-                    .contacts {
-                        position: absolute;
-                        top: 25px;
-                        right: 0;
-                        font-style: normal;
-                        text-align: right;
-                    }
-                    
-                    .contacts__phone {
-                        text-decoration: none;
-                        font-size: 26px;
-                        margin-bottom: 0;
-                    }
-                    
-                    .contacts__timeline {
-                        font-size: 13px;
-                        text-decoration: underline;
-                        line-height: 1;
-                        padding-right: 2px;
-                    }
-                    
-                    .contacts__text {
-                        color: #9A9A9A;
-                        font-size: 11px;
-                    }
-                    
-                    .main-page__hello {
-                        margin-bottom: 210px
-                    }
-                    
-                    .hello__title {
-                        font-size: 72px;
-                        width: 520px;
-                        margin-bottom: 24px;
-                    }
-                    
-                    .hello__text {
-                        font-size: 18px;
-                        margin-bottom: 28px;
-                    }
-                    
-                    .btn {
-                        background: #F5170E;
-                        border-radius: 35px;
-                        padding: 18px 40px;
-                        font-weight: bold;
-                        text-transform: uppercase;
-                        text-decoration: none;
-                        font-size: 14px;
-                        display: inline-block;
-                        color: #fff;
-                    }
-                    
-                    .main-page__offers {
-                        margin-bottom: 162px;
-                    }
-                    
-                    .title {
-                        font-size: 36px;
-                        font-weight: bold;
-                        margin-left: 5px;
-                        margin-bottom: 50px;
-                    }
-                    
-                    .title--fire:after {
-                        content: url(./img/offer/offertitle/flame.png);
-                        margin-left: 12px;
-                    }
-                    
-                    .offers__item {
-                        min-height: 449px;
-                        display: inline-block;
-                        background: #fff;
-                        border-radius: 5px;
-                        margin-right: 23px;
-                        width: 362px;
-                    }
-                    
-                    .offers__item:last-child {
-                        margin-right: 0px;
-                    }
-                    
-                    .offers__cover {
-                        height: 144px;
-                    }
-                    
-                    .offers__img {
-                        width: 100%;
-                        height: 100%;
-                        object-fit: cover;
-                    }
-                    
-                    .offers__content {
-                        padding: 35px 16px 26px 21px;
-                        color: #000;
-                    }
-                    
-                    .offers__name {
-                        font-size: 24px;
-                        font-weight: bold;
-                        margin-bottom: 21px;
-                    }
-                    
-                    .offers__features {
-                        margin-left: 7px;
-                        margin-bottom: 21px;
-                    }
-                    
-                    .offers__feature {
-                        display: inline-block;
-                        margin-right: 24px;
-                        color: #666666;
-                        width: 126px;
-                    }
-                    
-                    .offers__feature:last-child {
-                        margin-right: 0;
-                    }
-                    
-                    .offers__feature-text {
-                        display: inline;
-                        vertical-align: top;
-                        margin-left: 6px;
-                    }
-                    
-                    .offers__text {
-                        font-size: 14px;
-                        margin-left: 2px;
-                        margin-bottom: 25px
-                    }
-                    
-                    .offers__btn-wrap {
-                        margin-left: 4px;
-                    }
-                    
-                    .offers__btn {
-                        background: #fff;
-                        border-radius: 40px;
-                        padding: 18px 29px;
-                        border: 2px solid #f5170e;
-                        font-weight: bold;
-                        text-transform: uppercase;
-                        text-decoration: none;
-                        font-size: 14px;
-                        display: inline-block;
-                        color: #F5170E;
-                    }
-                    
-                    .offers__btn--color--dark {
-                        background: #F5170E;
-                        border-radius: 40px;
-                        padding: 18px 29px;
-                        border: 2px solid #f5170e;
-                        font-weight: bold;
-                        text-transform: uppercase;
-                        text-decoration: none;
-                        font-size: 14px;
-                        display: inline-block;
-                        color: #fff;
-                    }
-                    
-                    .main-page__news {
-                        margin-bottom: 148px;
-                    }
-                    
-                    .news__title {
-                        font-size: 36px;
-                        font-weight: bold;
-                        margin-bottom: 50px;
-                    }
-                    
-                    .news__list {
-                        margin-bottom: 51px
-                    }
-                    
-                    .news__item {
-                        width: 557px;
-                        display: inline-block;
-                        vertical-align: top;
-                        position: relative;
-                        border-radius: 5px;
-                        overflow: hidden;
-                        margin-right: 20px;
-                        ;
-                    }
-                    
-                    .news__item:last-child {
-                        margin-right: 0;
-                    }
-                    
-                    .news__img {
-                        display: block;
-                        width: 100%;
-                        height: 100%;
-                        object-fit: cover;
-                    }
-                    
-                    .news__content {
-                        position: absolute;
-                        left: 0;
-                        right: 0;
-                        bottom: 0;
-                        padding: 20px 30px;
-                        min-height: 165px;
-                    }
-                    
-                    .news__date {
-                        display: inline-block;
-                        font-size: 14px;
-                        margin-bottom: 15px;
-                    }
-                    
-                    .news__discription {
-                        font-size: 24px;
-                        font-weight: bold;
-                        margin-bottom: 4px;
-                    }
-                    
-                    .paginator {
-                        text-align: center;
-                    }
-                    
-                    .paginator__display,
-                    .paginator__list {
-                        display: inline-block;
-                        vertical-align: middle;
-                    }
-                    
-                    .paginator__display {
-                        margin-right: 25px;
-                    }
-                    
-                    .paginator__item {
-                        display: inline-block;
-                        vertical-align: middle;
-                    }
-                    
-                    .paginator__item--active .paginator__number {
-                        background: #fff;
-                        color: #F5170E;
-                    }
-                    
-                    .paginator__number {
-                        display: block;
-                        text-decoration: none;
-                        width: 32px;
-                        height: 32px;
-                        border-radius: 50%;
-                        font-weight: bold;
-                        line-height: 32px;
-                    }
-                    
-                    .main-page__about {
-                        margin-bottom: 55px;
-                    }
-                    
-                    .about__items {
-                        display: inline-block;
-                    }
-                    
-                    .about__background {
-                        width: 490px;
-                        display: inline-block;
-                        border-radius: 5px;
-                        overflow: hidden;
-                        position: absolute;
-                    }
-                    
-                    .about__background-img {
-                        display: block;
-                        width: 100%;
-                        height: 100%;
-                        object-fit: cover;
-                    }
-                    
-                    .about__content {
-                        background: url(./img/about/mountains.png) center center no-repeat;
-                        display: inline-block;
-                        border-radius: 5px;
-                        vertical-align: top;
-                        width: 785px;
-                        padding: 70px 203px 66px 81px;
-                        position: relative;
-                        margin-top: 95px;
-                        margin-left: 353px;
-                    }
-                    
-                    .about__content-title {
-                        font-size: 36px;
-                        color: #000;
-                        font-weight: bold;
-                        margin-bottom: 40px;
-                    }
-                    
-                    .about__content-text {
-                        text-align: left;
-                        margin-bottom: 60px;
-                        color: #060606
-                    }
-                    
-                    .footer-section__element {
-                        border-top: 1px solid rgba(255, 255, 255, .1);
-                    }
-                    
-                    .footer {
-                        margin-top: 20px;
-                        height: 148px;
-                        position: relative;
-                    }
-                    
-                    .social-links {
-                        position: absolute;
-                        top: 30px;
-                        right: 253px;
-                    }
-                    
-                    .social-links__item {
-                        display: inline-block;
-                        vertical-align: middle;
-                        margin-right: 10px;
-                    }
-                    
-                    .social-links__item:last-child {
-                        margin-right: 0;
-                    }
-                    
-                    .social-links__logo {
-                        display: block;
-                        width: 36px;
-                        height: 36px;
-                        text-decoration: none;
-                        background: center center no-repeat;
-                    }
-                    
-                    .social-links__item--icon--tm .social-links__logo {
-                        background-image: url(./img/socials/telegram.png);
-                    }
-                    
-                    .social-links__item--icon--tm .social-links__logo:hover {
-                        background-image: url(./img/socials/hover/t.png);
-                    }
-                    
-                    .social-links__item--icon--vk .social-links__logo {
-                        background-image: url(./img/socials/vk.png);
-                    }
-                    
-                    .social-links__item--icon--vk .social-links__logo:hover {
-                        background-image: url(./img/socials/hover/vk.png);
-                    }
-                    
-                    .social-links__item--icon--fb .social-links__logo {
-                        background-image: url(./img/socials/f.png);
-                    }
-                    
-                    .social-links__item--icon--fb .social-links__logo:hover {
-                        background-image: url(./img/socials/hover/f2.png);
-                    }
-                    
-                    .social-links__item--icon--inst .social-links__logo {
-                        background-image: url(./img/socials/in.png);
-                    }
-                    
-                    .social-links__item--icon--inst .social-links__logo:hover {
-                        background-image: url(./img/socials/hover/in.png);
-                    }
+                        html,
+                        body {
+                            height: 100%;
+                            width: 100%;
+                        }
+                        
+                        body {
+                            font-family: 'Open Sans', Helvetica, sans-serif;
+                            color: #fff;
+                            font-size: 16px;
+                            line-height: 1.42;
+                            background: #001821;
+                            -webkit-font-smoothing: antialiased;
+                            -moz-osx-font-smoothing: grayscale;
+                        }
+                        
+                        a {
+                            color: inherit;
+                        }
+                        
+                        h1,
+                        h2,
+                        h3,
+                        h4 {
+                            margin: 0;
+                            font-weight: none;
+                        }
+                        
+                        img {
+                            display: block;
+                            max-width: 100%;
+                        }
+                        
+                        * {
+                            box-sizing: border-box;
+                        }
+                        
+                        .wrapper {
+                            display: flex;
+                            flex-direction: column;
+                            min-height: 100%;
+                        }
+                        
+                        ul {
+                            padding: 0;
+                            margin: 0;
+                        }
+                        
+                        ul li {
+                            list-style: none;
+                        }
+                        
+                        .main-page {
+                            background: url(./img/background/1.png) center top no-repeat, url(./img/background/2.png) center bottom 160px no-repeat, url(./img/background/3.png) center center no-repeat;
+                        }
+                        
+                        .main-page__header {
+                            /*margin-bottom: 117px;*/
+                            margin-bottom: 30px;
+                        }
+                        
+                        .container {
+                            position: relative;
+                            margin: 0 auto;
+                            width: 1141px;
+                        }
+                        
+                        .header__container {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            padding-top: 25px;
+                        }
+                        
+                        .header__col {
+                            display: flex;
+                            align-items: center;
+                        }
+                        
+                        .header__col--align-rigt {
+                            justify-self: flex-end;
+                        }
+                        
+                        .logo {
+                            display: block;
+                            margin-right: 79px;
+                        }
+                        
+                        .menu__list {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                        }
+                        
+                        .menu__item {
+                            /*display: inline-block;
+                            vertical-align: middle;*/
+                            margin-right: 51px;
+                        }
+                        
+                        .menu__item:last-child {
+                            margin-right: 0px;
+                        }
+                        
+                        .menu__item--active .menu__link {
+                            color: #F5170E;
+                        }
+                        
+                        .menu__link {
+                            font-size: 14px;
+                            text-decoration: none;
+                        }
+                        
+                        .menu__link:hover {
+                            color: red;
+                        }
+                        
+                        .contacts {
+                            font-style: normal;
+                            text-align: right;
+                        }
+                        
+                        .contacts__phone {
+                            text-decoration: none;
+                            font-size: 26px;
+                            margin-bottom: 0;
+                        }
+                        
+                        .contacts__timeline {
+                            font-size: 13px;
+                            text-decoration: underline;
+                            line-height: 1;
+                            padding-right: 2px;
+                        }
+                        
+                        .contacts__text {
+                            color: #9A9A9A;
+                            font-size: 11px;
+                        }
+                        
+                        .main-page__hello {
+                            margin-bottom: 210px
+                        }
+                        
+                        .hello__content {
+                            width: 45%;
+                            min-height: 423px;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-start;
+                            justify-content: flex-end;
+                            /*justify-content: space-around;
+                        min-height: 335px;*/
+                        }
+                        
+                        .hello__title {
+                            font-size: 72px;
+                            margin-bottom: 24px;
+                        }
+                        
+                        .hello__text {
+                            font-size: 18px;
+                            margin-bottom: 28px;
+                        }
+                        
+                        .btn {
+                            background: #F5170E;
+                            border-radius: 35px;
+                            padding: 18px 40px;
+                            font-weight: bold;
+                            text-transform: uppercase;
+                            text-decoration: none;
+                            font-size: 14px;
+                            display: inline-block;
+                            color: #fff;
+                        }
+                        
+                        .btn--color--light {
+                            background: #fff;
+                            color: #F5170E;
+                            border: 2px solid #f5170e
+                        }
+                        
+                        .main-page__offers {
+                            margin-bottom: 162px;
+                        }
+                        
+                        .title {
+                            font-size: 36px;
+                            font-weight: bold;
+                            margin-left: 5px;
+                            margin-bottom: 50px;
+                        }
+                        
+                        .title--fire:after {
+                            content: url(./img/offer/offertitle/flame.png);
+                            margin-left: 12px;
+                        }
+                        
+                        .offers__list {
+                            display: flex;
+                            justify-content: space-between;
+                            /*flex-wrap: wrap;*/
+                        }
+                        
+                        .offer {
+                            display: flex;
+                            flex-direction: column;
+                            min-height: 449px;
+                            background: #fff;
+                            border-radius: 5px;
+                        }
+                        
+                        .offers__item {
+                            width: calc(100% / 3 - 18px);
+                        }
+                        
+                        .offer__cover {
+                            height: 144px;
+                        }
+                        
+                        .offer__img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                        
+                        .offer__content {
+                            flex: 1;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            padding: 35px 16px 26px 21px;
+                            color: #000;
+                        }
+                        
+                        .offer__name {
+                            font-size: 24px;
+                            font-weight: bold;
+                            /*margin-bottom: 21px;*/
+                        }
+                        
+                        .offer__features {
+                            display: flex;
+                            margin-left: 7px;
+                            /*margin-bottom: 21px;*/
+                        }
+                        
+                        .offer__feature {
+                            display: flex;
+                            align-items: center;
+                            margin-right: 35px;
+                            color: #666666;
+                        }
+                        
+                        .offer__feature:last-child {
+                            margin-right: 0;
+                        }
+                        
+                        .offer__feature-text {
+                            margin-left: 9px;
+                        }
+                        
+                        .offer__text {
+                            font-size: 14px;
+                            margin-left: 2px;
+                            /*margin-bottom: 25px*/
+                        }
+                        
+                        .offer__btn-wrap {
+                            margin-left: 4px;
+                        }
+                        
+                        .offer__btn {
+                            background: #fff;
+                            border-radius: 40px;
+                            padding: 18px 29px;
+                            border: 2px solid #f5170e;
+                            font-weight: bold;
+                            text-transform: uppercase;
+                            text-decoration: none;
+                            font-size: 14px;
+                            display: inline-block;
+                            color: #F5170E;
+                        }
+                        
+                        .offer__btn--color--dark {
+                            background: #F5170E;
+                            border-radius: 40px;
+                            padding: 18px 29px;
+                            border: 2px solid #f5170e;
+                            font-weight: bold;
+                            text-transform: uppercase;
+                            text-decoration: none;
+                            font-size: 14px;
+                            display: inline-block;
+                            color: #fff;
+                        }
+                        
+                        .main-page__news {
+                            margin-bottom: 148px;
+                        }
+                        
+                        .news__title {
+                            font-size: 36px;
+                            font-weight: bold;
+                            margin-bottom: 50px;
+                        }
+                        
+                        .news__list {
+                            display: flex;
+                            justify-content: space-between;
+                            margin-bottom: 51px;
+                        }
+                        
+                        .news__item {
+                            flex: 1;
+                            margin-right: 2%;
+                        }
+                        
+                        .news__item:last-child {
+                            margin-right: 0;
+                        }
+                        
+                        .single-news {
+                            display: flex;
+                            border-radius: 5px;
+                            overflow: hidden;
+                            position: relative;
+                        }
+                        
+                        .single-news__img {
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                        
+                        .single-news__content {
+                            position: absolute;
+                            left: 0;
+                            right: 0;
+                            bottom: 0;
+                            padding: 20px 30px;
+                            min-height: 165px;
+                        }
+                        
+                        .single-news__date {
+                            display: inline-block;
+                            font-size: 14px;
+                            margin-bottom: 15px;
+                        }
+                        
+                        .single-news__discription {
+                            font-size: 24px;
+                            font-weight: bold;
+                            margin-bottom: 4px;
+                        }
+                        
+                        .paginator {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                        
+                        .paginator--theme--light .paginator__item--active .paginator__number {
+                            background: #F5170E;
+                            color: #fff;
+                        }
+                        
+                        .paginator__list {
+                            display: flex;
+                            align-items: center;
+                        }
+                        
+                        .paginator__display {
+                            margin-right: 25px;
+                        }
+                        
+                        .paginator__item {
+                            text-align: center;
+                        }
+                        
+                        .paginator__item--active .paginator__number {
+                            background: #fff;
+                            color: #F5170E;
+                        }
+                        
+                        .paginator__number {
+                            display: block;
+                            text-decoration: none;
+                            width: 32px;
+                            height: 32px;
+                            border-radius: 50%;
+                            font-weight: bold;
+                            line-height: 32px;
+                        }
+                        
+                        .main-page__about {
+                            margin-bottom: 55px;
+                        }
+                        
+                        .about__items {
+                            display: flex;
+                        }
+                        
+                        .about__background {
+                            width: 490px;
+                            height: 505px;
+                            border-radius: 5px;
+                            overflow: hidden;
+                        }
+                        
+                        .about__background-img {
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                        
+                        .about__content {
+                            background: url(./img/about/mountains.png) center center no-repeat;
+                            border-radius: 5px;
+                            max-width: 785px;
+                            padding: 70px 203px 66px 81px;
+                            position: relative;
+                            margin-top: 95px;
+                            margin-left: -140px;
+                        }
+                        
+                        .about__content-title {
+                            font-size: 36px;
+                            color: #000;
+                            font-weight: bold;
+                            margin-bottom: 40px;
+                        }
+                        
+                        .about__content-text {
+                            text-align: left;
+                            margin-bottom: 60px;
+                            color: #060606
+                        }
+                        
+                        .footer-section {
+                            margin-top: auto;
+                        }
+                        
+                        .footer-section__element {
+                            border-top: 1px solid rgba(255, 255, 255, .1);
+                        }
+                        
+                        .footer {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                        }
+                        
+                        .footer-container__section {
+                            height: 148px;
+                        }
+                        
+                        .inner-footer {
+                            margin-top: auto;
+                        }
+                        
+                        .inner-footer__container {
+                            padding: 45px 0;
+                        }
+                        
+                        .footer__col {
+                            display: flex;
+                            align-items: center;
+                        }
+                        
+                        .footer__col--align--right {
+                            justify-content: flex-end;
+                        }
+                        
+                        .social-links__list {
+                            display: flex;
+                            align-items: center;
+                            margin-right: 74px;
+                        }
+                        
+                        .social-links__item {
+                            margin-right: 10px;
+                        }
+                        
+                        .social-links__item:last-child {
+                            margin-right: 0;
+                        }
+                        
+                        .social-links__logo {
+                            display: block;
+                            width: 36px;
+                            height: 36px;
+                            text-decoration: none;
+                            background: center center no-repeat;
+                        }
+                        
+                        .social-links__item--icon--tm .social-links__logo {
+                            background-image: url(./img/socials/telegram.png);
+                        }
+                        
+                        .social-links__item--icon--tm .social-links__logo:hover {
+                            background-image: url(./img/socials/hover/t.png);
+                        }
+                        
+                        .social-links__item--icon--vk .social-links__logo {
+                            background-image: url(./img/socials/vk.png);
+                        }
+                        
+                        .social-links__item--icon--vk .social-links__logo:hover {
+                            background-image: url(./img/socials/hover/vk.png);
+                        }
+                        
+                        .social-links__item--icon--fb .social-links__logo {
+                            background-image: url(./img/socials/f.png);
+                        }
+                        
+                        .social-links__item--icon--fb .social-links__logo:hover {
+                            background-image: url(./img/socials/hover/f2.png);
+                        }
+                        
+                        .social-links__item--icon--inst .social-links__logo {
+                            background-image: url(./img/socials/in.png);
+                        }
+                        
+                        .social-links__item--icon--inst .social-links__logo:hover {
+                            background-image: url(./img/socials/hover/in.png);
+                        }
+                        /*services page*/
+                        
+                        .top-line {
+                            display: flex;
+                            flex-direction: column;
+                            min-height: 412px;
+                            background: #001821 url(./img/servhead/headline.png) center top no-repeat;
+                            padding-bottom: 24px;
+                        }
+                        
+                        .top-line__container {
+                            display: flex;
+                            flex: 1;
+                            flex-direction: column;
+                            justify-content: space-between;
+                        }
+                        
+                        .services-title {
+                            font-size: 72px;
+                            font-weight: bold;
+                            line-height: 1;
+                        }
+                        
+                        .breadcrumbs__list {
+                            display: flex;
+                            align-items: center;
+                        }
+                        
+                        .breadcrumbs__item {
+                            display: flex;
+                            align-items: center;
+                        }
+                        
+                        .breadcrumbs__item--active .breadcrumbs__link {
+                            font-weight: bold;
+                        }
+                        
+                        .breadcrumbs__item:after {
+                            content: '/';
+                            color: #9A9A9A;
+                        }
+                        
+                        .breadcrumbs__item:last-child:after {
+                            display: none;
+                        }
+                        
+                        .breadcrumbs__link {
+                            color: #9A9A9A;
+                            font-size: 14px;
+                        }
+                        
+                        .page-content {
+                            background: #fff;
+                            color: #000;
+                            padding: 75px 0;
+                        }
+                        
+                        .services {
+                            margin-bottom: 40px;
+                        }
+                        
+                        .service {
+                            display: flex;
+                            padding: 25px 0;
+                        }
+                        
+                        .service__img {
+                            width: 40%;
+                            margin-right: 5%;
+                            object-fit: cover;
+                        }
+                        
+                        .service__content {
+                            padding: 7px 0;
+                            flex: 1;
+                        }
+                        
+                        .service__content-title {
+                            font-size: 36px;
+                            font-weight: bold;
+                            margin-bottom: 29px;
+                        }
+                        
+                        .service__desc {
+                            color: #030303;
+                            margin-bottom: 35px;
+                            line-height: 1.7;
+                        }
+                        
+                        .inner-section {
+                            background: #fff;
+                            color: #1A1B1E;
+                            padding: 95px 0 85px;
+                        }
+                        
+                        .inner-section--bg--grey {
+                            background: #F4F5F5;
+                        }
+                        
+                        .inner-section__title {
+                            font-size: 48px;
+                            font-weight: bold;
+                            margin-bottom: 60px;
+                        }
+                        
+                        .partners {
+                            display: flex;
+                            flex-wrap: wrap;
+                        }
+                        
+                        .partners__item {
+                            margin-left: 47px;
+                        }
+                        
+                        .partners__item:nth-child(4n+1) {
+                            margin-left: 0%;
+                        }
+                        
+                        .partners__link {
+                            display: flex;
+                            text-decoration: none;
+                            width: 250px;
+                            height: 120px;
+                            align-items: center;
+                            filter: grayscale(100%);
+                        }
+                        
+                        .partners__link:hover {
+                            filter: grayscale(0);
+                        }
