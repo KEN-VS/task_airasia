@@ -894,7 +894,7 @@
                             }
                             
                             .separator {
-                                background: url(./img/revi/couple.png) right 32% bottom no-repeat, url(./img/revi/Rectangle.png) center center no-repeat;
+                                background: url(./img/revi/couple.png) right 32% bottom no-repeat, url(./img/revi/rectangle.png) center center no-repeat;
                                 min-height: 363px;
                                 display: flex;
                                 flex-direction: column;
