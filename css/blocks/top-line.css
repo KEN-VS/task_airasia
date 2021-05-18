@@ -1,0 +1,20 @@
+.top-line {
+    display: flex;
+    flex-direction: column;
+    min-height: 412px;
+    background: #001821 url(../../img/servhead/headline.png) center top no-repeat;
+    padding-bottom: 24px;
+}
+
+.top-line__container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.top-line__title {
+    font-size: 72px;
+    font-weight: bold;
+    line-height: 1;
+}

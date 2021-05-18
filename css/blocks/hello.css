@@ -1,0 +1,22 @@
+.main-page__hello {
+    margin-bottom: 210px
+}
+
+.hello__content {
+    width: 45%;
+    min-height: 423px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.hello__title {
+    font-size: 72px;
+    margin-bottom: 24px;
+}
+
+.hello__text {
+    font-size: 18px;
+    margin-bottom: 28px;
+}

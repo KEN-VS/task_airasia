@@ -1,0 +1,16 @@
+.tag {
+    background: #E7E7E7;
+    border-radius: 35px;
+    padding: 9px 18px;
+    font-size: 13px;
+    display: inline-block;
+    color: #303030;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    -ms-border-radius: 35px;
+    -o-border-radius: 35px;
+}
+
+.tag--bg--blue {
+    background: #B9EAE4;
+}
