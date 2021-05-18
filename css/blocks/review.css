@@ -30,7 +30,7 @@
     margin-bottom: 10px;
 }
 
-.review__user--active {
+.review__user:hover {
     color: #2E77A4;
     text-decoration: underline;
 }
