@@ -9,18 +9,33 @@
     right: 0;
     align-items: center;
     justify-content: center;
-    background: url(../../img/welcpage/shades.png) center top 42% fixed no-repeat, url(../../img/welcpage/bg.png) center center / cover no-repeat;
+    background: url(../../img/welcpage/bg.png) center center / cover no-repeat;
 }
 
 .central {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+}
+
+.central::after {
+    content: "";
+    position: absolute;
+    top: -25%;
+    height: 250px;
+    width: 600px;
+    background: url(../../img/welcpage/shades.png) center center/cover no-repeat;
 }
 
 .welcome__title {
     font-size: 18px;
     margin-bottom: 52px;
+    z-index: 1;
+}
+
+.welcome-logo__img {
+    z-index: 1;
 }
 
 .central--asia {

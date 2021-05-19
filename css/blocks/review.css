@@ -26,8 +26,15 @@
     align-items: center;
     font-size: 24px;
     font-weight: bold;
-    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-color: transparent;
     margin-bottom: 10px;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+    -moz-text-decoration-color: transparent;
 }
 
 .review__user:hover {

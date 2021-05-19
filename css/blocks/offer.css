@@ -81,11 +81,16 @@
     font-size: 14px;
     display: inline-block;
     color: #F5170E;
+    transition: background-color .4s, color .4s;
+    -webkit-transition: background-color .4s, color .4s;
+    -moz-transition: background-color .4s, color .4s;
+    -ms-transition: background-color .4s, color .4s;
+    -o-transition: background-color .4s, color .4s;
 }
 
 .offer__btn:hover {
-    color: #DA0100;
-    border: 3px solid #DA0100;
+    color: #fff;
+    background: #F5170E;
 }
 
 .offer__btn--color--dark {
@@ -99,10 +104,14 @@
     font-size: 14px;
     display: inline-block;
     color: #fff;
+    transition: background-color .4s, color .4s;
+    -webkit-transition: background-color .4s, color .4s;
+    -moz-transition: background-color .4s, color .4s;
+    -ms-transition: background-color .4s, color .4s;
+    -o-transition: background-color .4s, color .4s;
 }
 
 .offer__btn--color--dark:hover {
     background: #DA0100;
     color: #fff;
-    border: 2px solid #DA0100;
 }

@@ -1,66 +1,104 @@
-.social-links__list {
-    display: flex;
-    align-items: center;
-    margin-right: 74px;
-}
-
-.social-links__item {
-    margin-right: 10px;
-}
-
-.social-links__item:last-child {
-    margin-right: 0;
-}
-
-.social-links__logo {
-    display: block;
-    width: 36px;
-    height: 36px;
-    text-decoration: none;
-    background: center center no-repeat;
-    position: relative;
-}
-
-.social-links__logo::after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 36px;
-    height: 36px;
-    background: url(../../img/socials/css_sprites.png);
-}
-
-.social-links__item--icon--tm .social-links__logo::after {
-    background-position: -122px -10px;
-}
-
-.social-links__item--icon--tm .social-links__logo:hover::after {
-    background-position: -122px -66px;
-}
-
-.social-links__item--icon--vk .social-links__logo::after {
-    background-position: -10px -122px;
-}
-
-.social-links__item--icon--vk .social-links__logo:hover::after {
-    background-position: -66px -122px;
-}
-
-.social-links__item--icon--fb .social-links__logo::after {
-    background-position: -10px -10px;
-}
-
-.social-links__item--icon--fb .social-links__logo:hover::after {
-    background-position: -66px -10px;
-}
-
-.social-links__item--icon--inst .social-links__logo::after {
-    background-position: -10px -66px;
-}
-
-.social-links__item--icon--inst .social-links__logo:hover::after {
-    background-position: -66px -66px;
-}
+    .social-links__list {
+        display: flex;
+        align-items: center;
+        margin-right: 74px;
+    }
+    
+    .social-links__item {
+        margin-right: 10px;
+    }
+    
+    .social-links__item:last-child {
+        margin-right: 0;
+    }
+    
+    .social-links__logo {
+        display: block;
+        width: 36px;
+        height: 36px;
+        text-decoration: none;
+        background: center center no-repeat;
+        position: relative;
+    }
+    
+    .social-links__logo::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 36px;
+        height: 36px;
+        background: url(../../img/socials/css_sprites.png);
+        opacity: 1;
+        transition: .4s;
+        -webkit-transition: .4s;
+        -moz-transition: .4s;
+        -ms-transition: .4s;
+        -o-transition: .4s;
+    }
+    
+    .social-links__logo::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 36px;
+        height: 36px;
+        background: url(../../img/socials/css_sprites.png);
+        opacity: 0;
+        transition: .4s;
+        --webkit-transition: .4s;
+        -moz-transition: .4s;
+        -ms-transition: .4s;
+        -o-transition: .4s;
+        -webkit-transition: .4s;
+    }
+    
+    .social-links__logo:hover::before {
+        opacity: 1;
+    }
+    
+    .social-links__logo:hover::after {
+        opacity: 0;
+    }
+    
+    .social-links__item--icon--tm .social-links__logo::after {
+        background-position: -122px -10px;
+        transition: .9s;
+        -webkit-transition: .9s;
+        -moz-transition: .9s;
+        -ms-transition: .9s;
+        -o-transition: .9s;
+    }
+    
+    .social-links__item--icon--tm .social-links__logo::before {
+        background-position: -122px -66px;
+    }
+    
+    .social-links__item--icon--vk .social-links__logo::after {
+        background-position: -10px -122px;
+    }
+    
+    .social-links__item--icon--vk .social-links__logo::before {
+        background-position: -66px -122px;
+    }
+    
+    .social-links__item--icon--fb .social-links__logo::after {
+        background-position: -10px -10px;
+    }
+    
+    .social-links__item--icon--fb .social-links__logo::before {
+        background-position: -66px -10px;
+    }
+    
+    .social-links__item--icon--inst .social-links__logo::after {
+        background-position: -10px -66px;
+    }
+    
+    .social-links__item--icon--inst .social-links__logo::before {
+        background-position: -66px -66px;
+    }

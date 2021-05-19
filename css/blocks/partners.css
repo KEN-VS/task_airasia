@@ -18,6 +18,11 @@
     height: 120px;
     align-items: center;
     filter: grayscale(100%);
+    transition: filter .4s;
+    -webkit-transition: filter .4s;
+    -moz-transition: filter .4s;
+    -ms-transition: filter .4s;
+    -o-transition: filter .4s;
 }
 
 .partners__link:hover {

@@ -16,7 +16,7 @@
 }
 
 .contacts__timeline-wrap:hover .dropdown {
-    left: 15%;
+    left: 10%;
     opacity: 1;
 }
 
@@ -30,6 +30,11 @@
     line-height: 1;
     padding-right: 2px;
     color: #98A4A8;
+    transition: color .4s;
+    -webkit-transition: color .4s;
+    -moz-transition: color .4s;
+    -ms-transition: color .4s;
+    -o-transition: color .4s;
 }
 
 .dropdown {
