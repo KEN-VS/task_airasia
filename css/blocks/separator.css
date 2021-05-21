@@ -1,9 +1,21 @@
 .separator {
-    background: url(../../img/revi/couple.png) right 32% bottom no-repeat, url(../../img/revi/rectangle.png) center center no-repeat, #fff;
+    background: /*url(../../img/revi/couple.png) right 32% bottom no-repeat, */
+    url(../../img/revi/rectangle.png) center center no-repeat, #fff;
     min-height: 363px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
+}
+
+.separator::after {
+    content: "";
+    width: 490px;
+    height: 340px;
+    background: url(../../img/revi/couple.png) center center no-repeat;
+    position: absolute;
+    bottom: 0%;
+    right: 29%;
 }
 
 .separator__title {
