@@ -1,6 +1,5 @@
 .separator {
-    background: /*url(../../img/revi/couple.png) right 32% bottom no-repeat, */
-    url(../../img/revi/rectangle.png) center center no-repeat, #fff;
+    background: url(../../img/revi/couple.png) right 32% bottom no-repeat, url(../../img/revi/rectangle.png) center center no-repeat, #fff;
     min-height: 363px;
     display: flex;
     flex-direction: column;
@@ -8,7 +7,8 @@
     position: relative;
 }
 
-.separator::after {
+
+/*.separator::after {
     content: "";
     width: 490px;
     height: 340px;
@@ -16,7 +16,7 @@
     position: absolute;
     bottom: 0%;
     right: 29%;
-}
+}*/
 
 .separator__title {
     font-size: 48px;
